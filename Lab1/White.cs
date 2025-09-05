@@ -1,4 +1,6 @@
-﻿namespace Lab1
+﻿using System.IO.Pipes;
+
+namespace Lab1
 {
     public class White
     {
@@ -7,6 +9,8 @@
             bool answer = false;
 
             // code here
+            if (d > 0) answer = true;
+            else answer = false;
 
             // end
 
@@ -17,6 +21,8 @@
             bool answer = false;
 
             // code here
+            if (n % 2 == 0) answer = true;
+            else answer = false;
 
             // end
 
@@ -27,6 +33,9 @@
             int answer = 0;
 
             // code here
+            if (a > b) answer = a;
+            else answer = b;
+            
 
             // end
 
@@ -37,6 +46,13 @@
             double answer = 0;
 
             // code here
+            double a = Math.Abs(f);
+            double b = Math.Abs(d);
+            if (a < b) answer = f;
+            else answer = d;
+            {
+                
+            }
 
             // end
 
